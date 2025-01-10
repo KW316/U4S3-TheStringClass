@@ -13,8 +13,10 @@ public class AlgoChallenge {
      */
 
     public static String missingLetter(String letter, int n) {
-
-        return null;
+     String str = "";
+        str = letter.substring(0,n) + letter.substring(n+1,letter.length());
+        System.out.println(str);
+        return str;
     }
 
     /* Problem 2
@@ -28,9 +30,15 @@ public class AlgoChallenge {
      */
 
     public static String wordOfDay(String word) {
-
-        return null;
+        String str = word.substring(word.length()-1);
+        String ugh = str+word+str;
+        System.out.println(ugh);
+        return ugh;
     }
 
+    public static void main(String[] args) {
+        missingLetter("Kianna",4);
+        wordOfDay("Kiannamarie");
+    }
 }
 

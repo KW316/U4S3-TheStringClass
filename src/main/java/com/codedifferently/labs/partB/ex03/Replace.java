@@ -4,8 +4,8 @@ public class Replace {
     public static String sentence(){
         String response = "";
         String sentence = "Using String replace to replace character";
-        /** Your code goes here*/
-
+        sentence = sentence.replace("r", "R");
+        response += sentence;
 
         return response;
     }

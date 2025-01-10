@@ -5,7 +5,8 @@ public class Indexing {
         String response = "";
         String myStr = "Hello planet earth, you are a great planet.";
         /* Your code goes here*/
-
+            int first = myStr.indexOf("e");
+        System.out.println(myStr.indexOf("e", first+1));
         return response;
     }
 
